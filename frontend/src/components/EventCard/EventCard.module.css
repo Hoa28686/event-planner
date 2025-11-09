@@ -1,0 +1,212 @@
+.eventCard {
+  border: 0.1rem solid rgb(209, 208, 208);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  text-align: left;
+  line-height: 1.8;
+  width: 25rem;
+  margin-block: 2rem;
+  background: var(--body-background);
+  text-transform: capitalize;
+  position: relative;
+  transition: boxShadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.eventCard:hover {
+  box-shadow: 0 0.2rem 0.4rem #a5a5a5;
+}
+.favorite {
+  background: var(--body-background);
+  text-shadow: 0 0.1rem 0.3rem #a5a5a5;
+  border-radius: 0 0 0 2.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  margin: 0.1rem;
+  padding: 0.4rem 0.5rem;
+}
+.eventImage {
+  object-fit: cover;
+  width: 100%;
+  height: 16rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  background: inherit;
+  color: inherit;
+  width: 100%;
+}
+.eventColor {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.colorEmoji {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+.color {
+  width: 1.5rem;
+  height: 1.7rem;
+  border-radius: 0.5rem;
+  background: none;
+  padding: 0;
+  box-shadow: 0 0 0.2rem #afafaf;
+}
+.category {
+  font-size: 0.8rem;
+  color: #3e3e3e;
+}
+.label {
+  color: var(--placeholder-color);
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.select {
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: inherit;
+  background-color: inherit;
+  color: inherit;
+}
+.catBtns {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+.catBtn {
+  color: inherit;
+  background-color: transparent;
+}
+
+.time {
+  white-space: pre-line;
+}
+.time,
+.location {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  margin-block: 0.5rem;
+}
+.timeIcon,
+.locationIcon {
+  font-size: 1rem;
+  width: 2.5rem;
+  align-self: flex-start;
+}
+.timeIcon {
+  transform: translateY(0.1rem);
+}
+.locationIcon {
+  padding-left: 0.2rem;
+}
+
+.weatherContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+  padding-inline: 1rem;
+  margin-block: 1.2rem;
+}
+
+.weatherContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #616fff,
+    #bc62fc,
+    #659ef5,
+    #bc62fc,
+    #5f3df6
+  );
+  border-radius: 1rem;
+  opacity: 0.5;
+  z-index: -100;
+}
+.weatherIcon {
+  z-index: 10;
+  width: 3rem;
+  height: 3rem;
+}
+
+.eventCardFooter {
+  border-top: var(--border);
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+.button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 1rem;
+  transition: color 0.2s transform 0.8s;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.editForm {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  font-size: inherit;
+  background: var(--header-background);
+  color: var(--body-color);
+  border: var(--border);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+.editTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textArea {
+  height: 6rem;
+}
+.disabled {
+  color: grey;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .eventCard {
+    margin: 2rem;
+  }
+}
