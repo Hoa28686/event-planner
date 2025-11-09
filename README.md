@@ -81,4 +81,5 @@ This project was created as part of a web development learning journey to practi
 
 ### Mobile version
 
-<img src="frontend/public/screenshots/mobile.jpg" alt="Mobile" width="50%"/>
+![mobile](frontend/public/screenshots/mobile.jpg)
+<img src="frontend/public/screenshots/mobile.jpg" alt="Mobile" width="300"/>
