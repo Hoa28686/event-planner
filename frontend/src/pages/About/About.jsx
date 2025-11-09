@@ -11,6 +11,12 @@ const About = () => {
           and manage personal events. It was built using React and deployed via
           Render (backend) and Vercel (frontend).
         </p>
+        <br />
+        <p>
+          <strong>Purpose</strong>: this project was created as part of a web
+          development learning journey to practice building full-stack React
+          applications.
+        </p>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>
