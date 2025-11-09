@@ -82,4 +82,7 @@ This project was created as part of a web development learning journey to practi
 ### Mobile version
 
 ![mobile](frontend/public/screenshots/mobile.jpg)
+
+<p style="text-align:center">
 <img src="frontend/public/screenshots/mobile.jpg" alt="Mobile" width="300"/>
+</p>
