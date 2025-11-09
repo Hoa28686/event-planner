@@ -8,20 +8,20 @@ This project was created as part of a web development learning journey to practi
 
 ## 🚀 Getting started
 
-1.  ### Clone the repository
+1.  Clone the repository
 
     ```bash
     git clone https://github.com/Hoa28686/event-planner.git
     cd event-planner/frontend
     ```
 
-2.  ### Install the dependencies
+2.  Install the dependencies
 
     ```bash
     npm install
     ```
 
-3.  ### Set up environment variables
+3.  Set up environment variables
 
     Create `.env` in the frontend root folder of this project and add your API keys
 
@@ -31,7 +31,7 @@ This project was created as part of a web development learning journey to practi
     VITE_LOCATIONIQ_API_KEY=your_locationIQ_api_key
     ```
 
-4.  ### Start the development server
+4.  Start the development server
     ```bash
     npm run dev
     ```
